@@ -4,7 +4,7 @@ restful-api with node js
 **USER**
 
 |Route||HTTP Verb||Post Body||Description|
-|-----||---------||---------||-----------------------------|
+|---||---||---||---|
 |/users||GET||Empty||List all user|
 |/users||POST||{'username':foo,'password':'bar','name':'foo','surname':'bar','birdtyear':'1997','createdAt','default=date.now'}||Create new user|
 |/users/:user_id||GET||Empty||Find user by id |
@@ -14,7 +14,7 @@ restful-api with node js
 
 **Products**
 |Route||HTTP Verb||Post Body||Description|
-|-----||---------||---------||-----------------------------|
+|---||---||---||---|
 |/products||GET||Empty||List all user|
 |/products||POST||{'username':foo,'password':'bar','name':'foo','surname':'bar','birdtyear':'1997','createdAt','default=date.now'}||Create new user|
 |/products/:product_id||GET   ||Empty||Find user by id        |
