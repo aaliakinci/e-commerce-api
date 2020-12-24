@@ -17,10 +17,10 @@ restful-api with node js
 |Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
 |/products|GET|Empty|List all user|
-|/products|POST|{'productName':foo,'unitPrice':'20','unitStock':'foo','category_id':'category_id','createdAt','default=date.now'}|Create new user|
-|/products/:product_id|GET   |Empty|Find user by id        |
-|/products/:product_id|PUT   |Empty|Update user by id     |
-|/products/:product_id|DELETE|Empty|Delete user by id      |
+|/products|POST|{'productName':foo,'unitPrice':'20','unitStock':'foo','category_id':'category_id','createdAt','default=date.now'}|Create new product|
+|/products/:product_id|GET   |Empty|Find product by id        |
+|/products/:product_id|PUT   |Empty|Update product by id     |
+|/products/:product_id|DELETE|Empty|Delete product by id      |
 |/products/best10     |GET   |Empty|Top 10 products by favs|
 
 
@@ -29,8 +29,8 @@ restful-api with node js
 |Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
 |/categories|GET|Empty|List all user|
-|/categories|POST|{'categoryName':foo,'products':'category_id','createdAt','default=date.now'}|Create new user|
-|/categories/:category_id|GET   |Empty|Find user by id        |
-|/categories/:category_id|PUT   |Empty|Update user by id     |
-|/categories/:category_id|DELETE|Empty|Delete user by id      |
+|/categories|POST|{'categoryName':foo,'products':'category_id','createdAt','default=date.now'}|Create new category|
+|/categories/:category_id|GET   |Empty|Find category by id        |
+|/categories/:category_id|PUT   |Empty|Update category by id     |
+|/categories/:category_id|DELETE|Empty|Delete category by id      |
  

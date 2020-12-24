@@ -43,8 +43,19 @@ router.post('/', (req, res) => {
     });
 });
 
-// update product 
+// get product by id 
+router.get('/:product_id', (req, res) => {
+    const param = req.params.product_id
+    const promise = Product.findById(param)
+    promise.then((data) => {
+        res.json(data);
+    }).catch((err) => {
+        res.json(err)
+    });
+});
 
+
+// update product 
 router.put('/:product_id', (req, res) => {
     const param = req.params.product_id
     const promise = Product.findByIdAndUpdate(param, req.body, { new: true })

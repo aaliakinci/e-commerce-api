@@ -38,6 +38,21 @@ router.post('/', (req, res) => {
   });
 });
 
+
+//get user by id 
+
+router.get('/:user_id', (req, res) => {
+  const param = req.params.user_id
+  const promise = User.findById(param)
+  promise.then((data) => {
+    res.json(data);
+  }).catch((err) => {
+    res.json(err)
+  });
+});
+
+
+
 // update user 
 
 router.put('/:user_id', (req, res) => {

@@ -26,6 +26,18 @@ router.post('/', (req, res) => {
   
 });
 
+// get category by id 
+router.get('/:category_id', (req, res) => {
+    const param = req.params.category_id
+    const promise = Category.findById(param)
+    promise.then((data) => {
+        res.json(data);
+    }).catch((err) => {
+        res.json(err)
+    });
+});
+
+
 // update category 
 
 router.put('/:category_id', (req, res) => {
