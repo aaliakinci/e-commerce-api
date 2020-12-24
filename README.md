@@ -6,7 +6,7 @@ restful-api with node js
 |Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
 |/users|GET|Empty|List all user|
-|/users|POST|{'userName':foo,'password':'bar','name':'foo','surname':'bar','birdtyear':'1997','createdAt','default=date.now'}|Create new user|
+|/users|POST|{'userName':foo,'password':'bar','name':'foo','surname':'bar','birthyear':'1997','createdAt','default=date.now'}|Create new user|
 |/users/:user_id|GET|Empty|Find user by id |
 |/users/:user_id|PUT|Empty|Update user by id |
 |/users/:user_id|DELETE|Empty|Delete user by id |
@@ -28,9 +28,9 @@ restful-api with node js
 
 |Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
-|/categorys|GET|Empty|List all user|
-|/categorys|POST|{'categoryName':foo,'products':'category_id','createdAt','default=date.now'}|Create new user|
-|/categorys/:category_id|GET   |Empty|Find user by id        |
-|/categorys/:category_id|PUT   |Empty|Update user by id     |
-|/categorys/:category_id|DELETE|Empty|Delete user by id      |
+|/categories|GET|Empty|List all user|
+|/categories|POST|{'categoryName':foo,'products':'category_id','createdAt','default=date.now'}|Create new user|
+|/categories/:category_id|GET   |Empty|Find user by id        |
+|/categories/:category_id|PUT   |Empty|Update user by id     |
+|/categories/:category_id|DELETE|Empty|Delete user by id      |
  

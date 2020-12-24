@@ -1,17 +1,32 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+const productsRouter = require('./routes/products')
+const categoriesRouter = require('./routes/categories')
 
-
-var app = express();
+const app = express();
 
 //db 
+const mongoose = require('mongoose');
 const db = require('./helper/db');
+  mongoose.connect('mongodb://localhost:27017/e-commerce-api', {useNewUrlParser: true, useUnifiedTopology: true}).then(()=>{
+          console.log('MongoDB connected');
+  }).catch((err)=>{
+      console.log('connection failed'+err);
+  })
+
+  mongoose.connection.on('open',()=>{
+      console.log('MongoDB connected');
+    })
+    mongoose.connection.on('error',(err)=>{
+      console.log('MongoDB Error:'+err);
+    })
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -30,6 +45,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/products', productsRouter);
+app.use('/categories', categoriesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
