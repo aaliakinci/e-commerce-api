@@ -3,7 +3,7 @@ restful-api with node js
 
 #User
 
-|Route||HTTP Verb||Post Body||Description|
+|Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
 |/users|GET|Empty|List all user|
 |/users|POST|{'userName':foo,'password':'bar','name':'foo','surname':'bar','birdtyear':'1997','createdAt','default=date.now'}|Create new user|
@@ -14,7 +14,7 @@ restful-api with node js
 
 #Products
 
-|Route||HTTP Verb||Post Body||Description|
+|Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
 |/products|GET|Empty|List all user|
 |/products|POST|{'productName':foo,'unitPrice':'20','unitStock':'foo','category_id':'category_id','createdAt','default=date.now'}|Create new user|
@@ -26,7 +26,7 @@ restful-api with node js
 
 #Category
 
-|Route||HTTP Verb||Post Body||Description|
+|Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
 |/categorys|GET|Empty|List all user|
 |/categorys|POST|{'categoryName':foo,'products':'category_id','createdAt','default=date.now'}|Create new user|
