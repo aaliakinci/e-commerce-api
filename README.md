@@ -1,7 +1,7 @@
 # e-commerce-api
 restful-api with node js 
 
-#User
+# User
 
 |Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
@@ -12,7 +12,7 @@ restful-api with node js
 |/users/:user_id|DELETE|Empty|Delete user by id |
 |/users/olduser|GET|Empty|Top 10 older user |
 
-#Products
+# Products
 
 |Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
@@ -24,7 +24,7 @@ restful-api with node js
 |/products/best10     |GET   |Empty|Top 10 products by favs|
 
 
-#Category
+# Category
 
 |Route|HTTP Verb|Post Body|Description|
 |---|---|---|---|
